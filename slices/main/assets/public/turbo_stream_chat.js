@@ -13,14 +13,12 @@ class TurboStreamChatElement extends HTMLElement {
 
   dispatchMessageEvent(data) {
     const event = new MessageEvent("message", { data: data.data })
-    console.log(event)
     return this.dispatchEvent(event)
   }
 
   createSocket(_channel, callbacks) {
     const room = this.getAttribute("room");
     const user = this.getAttribute("username");
-    console.log(room, user)
     let socket = new WebSocket(`ws://${window.location.host}/ws?user=${user}&room=${room}`);
     socket.onmessage = callbacks.received;
     return socket

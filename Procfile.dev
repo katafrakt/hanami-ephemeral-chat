@@ -1,2 +1,2 @@
-web: bundle exec guard --no-notify --no-interactions
+web: bundle exec iodine
 assets: yarn run start
