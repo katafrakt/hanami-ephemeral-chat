@@ -9,7 +9,7 @@
     "application-assets": "file:.assets"
   },
   "engines": {
-    "node": "16",
+    "node": "18",
     "npm": "*"
   },
   "scripts": {
@@ -20,5 +20,9 @@
     "test": "jest",
     "build-production": "yarn run build",
     "heroku-postbuild": "yarn run build"
+  },
+  "dependencies": {
+    "@hotwired/turbo": "^7.1.0",
+    "milligram": "^1.4.1"
   }
 }

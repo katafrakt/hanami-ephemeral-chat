@@ -1,0 +1,17 @@
+<turbo-stream action="append" target="messages">
+  <template>
+    <div class="row" id="<%= SecureRandom.uuid %>">
+      <div class="column column-80">
+        <% if is_system %>
+        <em><%= message %></em>
+        <% else %>
+        [<strong><%= user %></strong>]
+        <%= message %>
+        <% end %>
+      </div>
+      <div class="column column-20">
+        <%= time %>
+      </div>
+    </div>
+  </template>
+</turbo-stream>

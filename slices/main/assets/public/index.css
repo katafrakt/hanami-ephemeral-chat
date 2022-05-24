@@ -1,5 +1,20 @@
-/*
-  Import your CSS here
+@import "milligram";
 
-  e.g. @import "./some-module";
-*/
+.chat-heading {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid;
+}
+
+.chat-area {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.chat-controls {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  background-color: white;
+}

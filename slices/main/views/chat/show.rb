@@ -2,11 +2,9 @@
 
 module Main
   module Views
-    module Home
+    module Chat
       class Show < View::Base
-        expose :room do
-          SecureRandom.uuid
-        end
+        expose :room, :username
       end
     end
   end

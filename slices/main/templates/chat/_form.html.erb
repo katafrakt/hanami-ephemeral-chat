@@ -1,0 +1,7 @@
+<turbo-frame id="chat-controls">
+  <form class="chat-controls" data-turbo="true"
+      method="POST" action="/chat/<%= room %>/message">
+    <input type="text" name="message" autocomplete="false" autofocus />
+    <input type="hidden" name="user" value="<%= username %>" />
+  </form>
+</turbo-frame>

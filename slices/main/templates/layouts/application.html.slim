@@ -6,10 +6,11 @@ html
       - if content_for :title
         ==> content_for :title
         ' /
-      ' EphemeralChat
-    meta name="title" content="EphemeralChat"
+      ' Hanami Ephemeral Chat
+    meta name="title" content="Hanami Ephemeral Chat"
     link rel="stylesheet" type="text/css" href=assets["main/public.css"]
     script src=assets["main/public.js"] defer=true
 
   body
-    == yield
+    div.container
+      == yield

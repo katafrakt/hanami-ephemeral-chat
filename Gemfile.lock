@@ -170,6 +170,7 @@ GEM
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
+    iodine (0.7.47)
     launchy (2.5.0)
       addressable (~> 2.7)
     listen (3.7.1)
@@ -186,7 +187,6 @@ GEM
       hansi (~> 0.2.0)
       mustermann (= 1.1.1)
     nenv (0.3.0)
-    nio4r (2.5.8)
     nokogiri (1.13.6-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.6-x86_64-darwin)
@@ -215,8 +215,6 @@ GEM
       eventmachine_httpserver
       http_parser.rb (~> 0.6.0)
       multi_json
-    puma (5.6.4)
-      nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -349,11 +347,11 @@ DEPENDENCIES
   hanami-utils (~> 2.0.0.alpha)
   hanami-view (~> 2.0.0.alpha)
   i18n (~> 1.8)
+  iodine
   pg
   pry
   pry-byebug
   puffing-billy (~> 2.2)
-  puma (~> 5.6)
   rake (~> 13.0)
   rom (~> 5.2)
   rom-factory (~> 0.10)

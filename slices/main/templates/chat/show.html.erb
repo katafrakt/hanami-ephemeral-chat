@@ -1,0 +1,8 @@
+<h1 class="chat-heading">Hanami Ephemeral Chat</h1>
+
+<turbo-stream-chat room="<%= room %>" username="<%= username %>">
+</turbo-stream-chat>
+
+<div id="messages" class="chat-area"></div>
+
+<%= render :form, room: room, username: username %>
