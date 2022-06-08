@@ -97,7 +97,7 @@ module EphemeralChat
 
     def initialize(room_name, user)
       @room_name = room_name || "default"
-      @user = user
+      @user = Hanami::Utils::Escape.html(user)
     end
 
     def on_open(client)

@@ -4,7 +4,11 @@ module Main
   module Views
     module Chat
       class AddMessage < View::Base
-        expose :room, :username
+        expose :room
+
+        expose :username do |username:|
+          Hanami::Utils::Escape.html(username)
+        end
       end
     end
   end
