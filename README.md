@@ -5,6 +5,20 @@
 
 This is an experiment to create a simple chat application using [Hanami](https://github.com/hanami/hanami) and [Hotwire](https://hotwired.dev/) on top of [Iodine](https://github.com/boazsegev/iodine) server.  It does not use any persistence - messages are delivered to all users connected to current room, but are not stored anywhere and cannot be accessed later.
 
+## How to run
+
+``` sh
+bundle install
+yarn
+cp .env-sample .env
+gem install foreman
+foreman start -f Procfile.dev
+```
+
+Now you can go to http://localhost:5000/
+
+## The WHYs
+
 ### Why Hanami?
 
 Hanami is a next-gen web framework which attempts to solve problems that Rails-way promotes. It is currently approaching version 2.0 (this app is build on top of alpha 8.1 version) so it's high time to give it a go.
